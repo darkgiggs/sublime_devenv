@@ -1,0 +1,5 @@
+﻿*.obj
+*.rdi
+*.exe
+*.ilk
+*.pdb
