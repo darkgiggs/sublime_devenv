@@ -1,0 +1,93 @@
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+    "name": "effingTest",
+    "variables": {
+        "function": "#880000",
+        "usertypes": "#216F85"
+    },
+    "globals": {
+        "background": "#FFFFFF", // Dark gray background
+        "caret": "#000000", // Yellow cursor
+        "line_highlight": "#3A3A3A", // Slightly lighter line highlight
+    },
+    "rules": 
+    [
+    	{
+    		"name": "Functions",
+    		"scope": "variable.function.c++ | meta.toc-list.full-identifier.c++ | entity.name.function.c++",
+    		"foreground": "var(function)"
+    	},
+        {
+            "name": "Other functions",
+            "scope": "meta.function-call.c++ support.function.C99.c",
+            "foreground": "var(function)"
+        },
+        {
+            "name" : "Other Functions again",
+            "scope" : "source.c++ meta.function.c++ meta.block.c++ meta.block.c++ meta.function-call.c++ variable.function.c++",
+            "foreground": "var(function)"
+
+        },
+    	{
+    		"name": "Classes",
+    		"scope": "entity.name.type.using.c++ | support.type.stdint.c, entity.name.struct.c++ | entity.name.struct.forward-decl.c++",
+    		"foreground": "var(usertypes)"
+    	},
+        {
+            "name": "User types",
+            "scope": "entity.name.function.constructor.c++ | keyword.operator.c++ | entity.name.enum.c++",
+            "foreground": "var(usertypes)"
+        },
+        {
+            "name": "Preproc pounds",
+            "scope": "keyword.control.import.c++ | keyword.control.import.define.c++ | keyword.control.import.include.c++",
+            "foreground": "#666666"
+        },
+    	{
+    		"name": "Keywords",
+    		"scope": "keyword.control.c++ | keyword.control.flow.return.c++",
+    		"foreground": "#8f1dd0"
+    	},
+    	{
+    		"name": "Includes",
+    		"scope": "string.quoted.double.include.c++ | source.c++ meta.preprocessor.include.c++ string.quoted.other.lt-gt.include.c++",
+    		"foreground": "#a81548"
+    	},
+        {
+            "name": "Strings",
+            "scope" : "string.quoted.double.c",
+            "foreground": "#FF0000"
+        },
+    	{
+    		"name": "Macro",
+    		"scope": "entity.name.constant.preprocessor.c++, meta.assumed-macro.c | entity.name.function.preprocessor.c++ | source.c++ meta.preprocessor.macro.c++ meta.function-call.c++ variable.function.c++ ",
+    		"foreground": "#6F008A"
+    	},
+    	{
+    		"name": "Variables",
+    		"scope": "variable.c++, variable.parameter.c++",
+    		"foreground": "#000080"
+    	},
+    	{
+    		"name" : "Punctuation",
+    		"scope": "source.c++ meta.preprocessor.macro.parameters.c++ meta.group.c++ punctuation.separator.c++",
+    		"foreground": "#000000"
+    	},
+        {
+            "name": "builtin types",
+            "scope": "storage.type.c++ | storage.type.c | storage.modifier.c++ | keyword.declaration.struct.type.c++ | constant.language.c++ | keyword.declaration.enum.type.c++",
+            "foreground": "#3300ff"
+        },
+        {
+            "name": "comments",
+            "scope": "comment.block.c | comment.line.double-slash.c",
+            "foreground": "#008800"
+        },
+        {
+            "name": "bools",
+            "scope": "constant.language.boolean.false.c | constant.language.boolean.true.c ",
+            "foreground": "#3300FF"
+        }
+    	
+    ]
+}
